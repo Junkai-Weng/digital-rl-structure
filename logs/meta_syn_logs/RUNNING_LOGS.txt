@@ -1,0 +1,82 @@
+2026-02-21 12:38:32,064 - INFO - =========== Stage 1: Offline Multi-site Data Collection and Simulator Construction ===========
+2026-02-21 12:38:32,064 - INFO - Collecting data from 10 different Training Sites...
+2026-02-21 12:38:32,500 - INFO - Building super offline simulator and saving to data/synthetic_configs/merged_simulator.pkl ...
+2026-02-21 12:38:32,505 - INFO - 
+=========== Stage 2: Hyperparameter Search for LinUCB in Offline Simulator (Training) ===========
+2026-02-21 12:38:32,506 - INFO - Evaluating LinUCB (alpha=0.1)...
+2026-02-21 12:38:32,979 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 283.07
+2026-02-21 12:38:32,980 - INFO - Evaluating LinUCB (alpha=0.5)...
+2026-02-21 12:38:33,430 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 286.43
+2026-02-21 12:38:33,430 - INFO - Evaluating LinUCB (alpha=1.0)...
+2026-02-21 12:38:33,930 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 300.96
+2026-02-21 12:38:33,930 - INFO - Evaluating LinUCB (alpha=2.0)...
+2026-02-21 12:38:34,380 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 308.04
+2026-02-21 12:38:34,380 - INFO - --> LinUCB Offline Hyperparameter Search Completed. Best alpha: 0.1, with Offline Regret: 283.07
+2026-02-21 12:38:34,380 - INFO - 
+=========== Stage 3: LinUCB Generalization Evaluation on Novel True Site Distributions ===========
+2026-02-21 12:38:34,457 - INFO - LinUCB Site 0 evaluation completed. Final Regret: 39.58
+2026-02-21 12:38:34,519 - INFO - LinUCB Site 1 evaluation completed. Final Regret: 26.41
+2026-02-21 12:38:34,583 - INFO - LinUCB Site 2 evaluation completed. Final Regret: 25.56
+2026-02-21 12:38:34,647 - INFO - LinUCB Site 3 evaluation completed. Final Regret: 31.75
+2026-02-21 12:38:34,709 - INFO - LinUCB Site 4 evaluation completed. Final Regret: 32.62
+2026-02-21 12:38:34,772 - INFO - LinUCB Site 5 evaluation completed. Final Regret: 30.52
+2026-02-21 12:38:34,833 - INFO - LinUCB Site 6 evaluation completed. Final Regret: 29.34
+2026-02-21 12:38:34,895 - INFO - LinUCB Site 7 evaluation completed. Final Regret: 37.64
+2026-02-21 12:38:34,959 - INFO - LinUCB Site 8 evaluation completed. Final Regret: 32.82
+2026-02-21 12:38:35,022 - INFO - LinUCB Site 9 evaluation completed. Final Regret: 27.67
+2026-02-21 12:38:35,086 - INFO - LinUCB Site 10 evaluation completed. Final Regret: 30.03
+2026-02-21 12:38:35,154 - INFO - LinUCB Site 11 evaluation completed. Final Regret: 39.27
+2026-02-21 12:38:35,213 - INFO - LinUCB Site 12 evaluation completed. Final Regret: 37.44
+2026-02-21 12:38:35,275 - INFO - LinUCB Site 13 evaluation completed. Final Regret: 22.10
+2026-02-21 12:38:35,337 - INFO - LinUCB Site 14 evaluation completed. Final Regret: 40.85
+2026-02-21 12:38:35,402 - INFO - LinUCB Site 15 evaluation completed. Final Regret: 31.31
+2026-02-21 12:38:35,459 - INFO - LinUCB Site 16 evaluation completed. Final Regret: 19.95
+2026-02-21 12:38:35,525 - INFO - LinUCB Site 17 evaluation completed. Final Regret: 29.62
+2026-02-21 12:38:35,585 - INFO - LinUCB Site 18 evaluation completed. Final Regret: 31.73
+2026-02-21 12:38:35,646 - INFO - LinUCB Site 19 evaluation completed. Final Regret: 27.43
+2026-02-21 12:38:35,646 - INFO - 
+=========== Final Report across Sites ===========
+2026-02-21 12:38:35,646 - INFO - LinUCB mean regret across 20 sites: 31.18
+2026-02-21 12:38:35,647 - INFO - LinUCB std regret across sites: 5.54
+2026-02-21 12:38:35,647 - INFO - 
+=========== Stage 2: Hyperparameter Search for LinTS in Offline Simulator (Training) ===========
+2026-02-21 12:38:35,647 - INFO - Evaluating LinTS (sigma=0.1)...
+2026-02-21 12:38:36,700 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 295.36
+2026-02-21 12:38:36,700 - INFO - Evaluating LinTS (sigma=0.5)...
+2026-02-21 12:38:37,793 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 333.66
+2026-02-21 12:38:37,793 - INFO - Evaluating LinTS (sigma=1.0)...
+2026-02-21 12:38:38,847 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 414.83
+2026-02-21 12:38:38,847 - INFO - Evaluating LinTS (sigma=2.0)...
+2026-02-21 12:38:39,892 - INFO -   -> Valid Steps: 2000, Final Offline Regret: 626.05
+2026-02-21 12:38:39,892 - INFO - --> LinTS Offline Hyperparameter Search Completed. Best sigma: 0.1, with Offline Regret: 295.36
+2026-02-21 12:38:39,892 - INFO - 
+=========== Stage 3: LinTS Generalization Evaluation on Novel True Site Distributions ===========
+2026-02-21 12:38:40,166 - INFO - LinTS Site 0 evaluation completed. Final Regret: 37.12
+2026-02-21 12:38:40,442 - INFO - LinTS Site 1 evaluation completed. Final Regret: 41.28
+2026-02-21 12:38:40,723 - INFO - LinTS Site 2 evaluation completed. Final Regret: 24.91
+2026-02-21 12:38:40,980 - INFO - LinTS Site 3 evaluation completed. Final Regret: 35.53
+2026-02-21 12:38:41,244 - INFO - LinTS Site 4 evaluation completed. Final Regret: 33.64
+2026-02-21 12:38:41,517 - INFO - LinTS Site 5 evaluation completed. Final Regret: 15.71
+2026-02-21 12:38:41,774 - INFO - LinTS Site 6 evaluation completed. Final Regret: 29.76
+2026-02-21 12:38:42,030 - INFO - LinTS Site 7 evaluation completed. Final Regret: 35.34
+2026-02-21 12:38:42,294 - INFO - LinTS Site 8 evaluation completed. Final Regret: 30.50
+2026-02-21 12:38:42,546 - INFO - LinTS Site 9 evaluation completed. Final Regret: 40.34
+2026-02-21 12:38:42,808 - INFO - LinTS Site 10 evaluation completed. Final Regret: 33.24
+2026-02-21 12:38:43,057 - INFO - LinTS Site 11 evaluation completed. Final Regret: 31.66
+2026-02-21 12:38:43,314 - INFO - LinTS Site 12 evaluation completed. Final Regret: 37.64
+2026-02-21 12:38:43,573 - INFO - LinTS Site 13 evaluation completed. Final Regret: 37.86
+2026-02-21 12:38:43,869 - INFO - LinTS Site 14 evaluation completed. Final Regret: 32.52
+2026-02-21 12:38:44,158 - INFO - LinTS Site 15 evaluation completed. Final Regret: 36.73
+2026-02-21 12:38:44,425 - INFO - LinTS Site 16 evaluation completed. Final Regret: 43.12
+2026-02-21 12:38:44,673 - INFO - LinTS Site 17 evaluation completed. Final Regret: 33.34
+2026-02-21 12:38:44,923 - INFO - LinTS Site 18 evaluation completed. Final Regret: 33.12
+2026-02-21 12:38:45,163 - INFO - LinTS Site 19 evaluation completed. Final Regret: 32.92
+2026-02-21 12:38:45,163 - INFO - 
+=========== Final Report across Sites ===========
+2026-02-21 12:38:45,163 - INFO - LinTS mean regret across 20 sites: 33.81
+2026-02-21 12:38:45,163 - INFO - LinTS std regret across sites: 5.85
+2026-02-21 12:38:45,163 - INFO - 
+=========== LinUCB vs LinTS Comparison ===========
+2026-02-21 12:38:45,163 - INFO - LinUCB mean/std regret: 31.18 / 5.54
+2026-02-21 12:38:45,163 - INFO - LinTS  mean/std regret: 33.81 / 5.85
+2026-02-21 12:38:45,163 - INFO - LinUCB wins by 2.63 mean regret.
